@@ -2,9 +2,13 @@
 
 Anggota kelompok - 1 :
 (Leader) Bagas Restya Ermawan
+
 Alda Mevia
+
 Bagas Nurfauzi Hidayatullah
+
 Latief Fatkhur Rahman
+
 Maulana Arya Yoga Juliansyah
 
 Deskripsi Usaha : Hotgengs Sambal adalah sebuah resep sambal restoran asal Bandung,yaitu Babakaran yang berdiri sejak
