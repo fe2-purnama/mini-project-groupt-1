@@ -1,16 +1,17 @@
 # mini-project-groupt-1
-
+-------------------------------------------------------------------------------------------------------------------------------------
 Anggota kelompok - 1 :
-(Leader) Bagas Restya Ermawan
 
-Alda Mevia
+- (Leader) Bagas Restya Ermawan
 
-Bagas Nurfauzi Hidayatullah
+- Alda Mevia
 
-Latief Fatkhur Rahman
+- Bagas Nurfauzi Hidayatullah
 
-Maulana Arya Yoga Juliansyah
+- Latief Fatkhur Rahman
 
+- Maulana Arya Yoga Juliansyah
+-------------------------------------------------------------------------------------------------------------------------------------
 Deskripsi Usaha : Hotgengs Sambal adalah sebuah resep sambal restoran asal Bandung,yaitu Babakaran yang berdiri sejak
 2015 Hotgengs Sambal mulai digemari,karena cita rasanya yang pedas.
 
