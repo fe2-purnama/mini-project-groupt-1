@@ -47,7 +47,7 @@ body {
     padding-top: 0%;
     display: flex;
     align-items: center;
-    margin-top: 6%;
+    margin-top: 6.5%;
 }
 
 .jumbotron .container {
@@ -103,45 +103,63 @@ body {
 }
 
 .btn-jumbo:hover {
-    background-color: rgb(241, 93, 93);
+    background-color: #EB3E48;
     color: #ffffff;
     border-radius: 20px;
     padding: 10px 25px;
     border: none;
 }
 
-footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px 0;
-    margin-top: 30px;
+
+/* buat pilih gengsmu */
+
+.red-text {
+    color: #EB3E48;
 }
 
-.footer-info,
-.social-media {
-    flex: 1;
-    margin-right: 20px;
+
+/* CSS untuk mengatur ukuran kartu (card) */
+
+
+/* CSS untuk mengatur ukuran kartu (card) */
+
+.card-geng {
+    max-width: 18rem;
+    /* Lebar maksimum kartu */
+    margin-bottom: 0px;
+    /* Jarak antar kartu */
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    /* Efek bayangan */
+    border: none;
 }
 
-.footer-info h3,
-.social-media h3 {
-    margin-bottom: 10px;
+
+/* CSS untuk mengatur ukuran gambar pada kartu */
+
+.card-geng img {
+    height: 120px;
+    /* Tinggi gambar */
+    width: 120px;
+    /* Lebar gambar */
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
-.footer-info p {
-    margin: 5px 0;
+.card-geng img:hover {
+    transform: scale(1.1);
 }
 
-.social-media ul {
-    list-style: none;
-    padding: 0;
+
+/* CSS untuk memastikan gambar tetap proporsional */
+
+.card-img-top {
+    width: 100%;
+    /* Lebar gambar mencakup seluruh lebar kartu */
+    height: auto;
+    /* Tinggi gambar menyesuaikan dengan lebar kartu */
 }
 
-.social-media ul li {
-    margin-bottom: 5px;
-}
-
-.social-media ul li a {
-    color: #fff;
-    text-decoration: none;
+.card-nama-geng {
+    margin-bottom: 0px;
 }
