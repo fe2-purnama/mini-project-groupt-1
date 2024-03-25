@@ -1,165 +1,226 @@
-/*header*/
-
-header {
-    background-color: green;
-    align-items: center;
-    text-align: center;
-}
-
-header p {
-    color: white;
-    margin-bottom: 0;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-.mt-0 {
-    margin-top: 0 !important;
-}
-
-.mb-0 {
-    margin-bottom: 0 !important;
-}
-
-.active {
-    background-color: transparent;
-    color: black;
-    font-weight: bold;
-}
-
-.navbar {
-    z-index: 999;
-}
-
-.nav-link {
-    color: black;
-}
-
-.nav-link:hover {
-    color: black;
-    font-weight: bold;
-}
-
-.jumbotron {
-    background-color: #FEC600;
-    padding-top: 0%;
-    display: flex;
-    align-items: center;
-    margin-top: 6.5%;
-}
-
-.jumbotron .container {
-    display: flex;
-    flex-direction: column;
-    /* Menetapkan tata letak kontainer ke kolom */
-    align-items: flex-start;
-    /* Memposisikan kontainer secara horizontal ke kiri */
-    text-align: left;
-    /* Memastikan teks dalam kontainer berada di kiri */
-}
-
-.row h1 {
-    color: #3A3934;
-    font-weight: bold;
-}
-
-.lead {
-    font-weight: bold;
-}
-
-.jumbotron .row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.jumbotron img {
-    display: flex;
-    justify-content: flex-end;
-    /* Mengatur gambar-gambar di ujung kanan */
-    flex-direction: column;
-}
-
-.sambaljumbo {
-    width: 1000px;
-    height: 600px;
-    transition: transform 0.5s ease;
-    padding-bottom: 0;
-}
-
-.sambaljumbo:hover {
-    transform: scale(1.3);
-}
-
-.btn-jumbo {
-    background-color: white;
-    color: #3A3934;
-    border-radius: 20px;
-    padding: 10px 25px;
-    transition: transform 0.5s ease;
-    font-weight: bold;
-    border: none;
-}
-
-.btn-jumbo:hover {
-    background-color: #EB3E48;
-    color: #ffffff;
-    border-radius: 20px;
-    padding: 10px 25px;
-    border: none;
-}
-
-
-/* buat pilih gengsmu */
-
-.red-text {
-    color: #EB3E48;
-}
-
-
-/* CSS untuk mengatur ukuran kartu (card) */
-
-
-/* CSS untuk mengatur ukuran kartu (card) */
-
-.card-geng {
-    max-width: 18rem;
-    /* Lebar maksimum kartu */
-    margin-bottom: 0px;
-    /* Jarak antar kartu */
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
-    /* Efek bayangan */
-    border: none;
-}
-
-
-/* CSS untuk mengatur ukuran gambar pada kartu */
-
-.card-geng img {
-    height: 120px;
-    /* Tinggi gambar */
-    width: 120px;
-    /* Lebar gambar */
-    transition: cubic-bezier(0.23, 1, 0.320, 1);
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-.card-geng img:hover {
-    transform: scale(1.1);
-}
-
-
-/* CSS untuk memastikan gambar tetap proporsional */
-
-.card-img-top {
-    width: 100%;
-    /* Lebar gambar mencakup seluruh lebar kartu */
-    height: auto;
-    /* Tinggi gambar menyesuaikan dengan lebar kartu */
-}
-
-.card-nama-geng {
-    margin-bottom: 0px;
-}
+        /*header*/
+        
+        header {
+            background-color: green;
+            align-items: center;
+            text-align: center;
+        }
+        
+        header p {
+            color: white;
+            margin-bottom: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .mt-0 {
+            margin-top: 0 !important;
+        }
+        
+        .mb-0 {
+            margin-bottom: 0 !important;
+        }
+        
+        .nav-item .active {
+            background-color: transparent;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .navbar {
+            z-index: 999;
+        }
+        
+        .nav-link {
+            color: black;
+        }
+        
+        .nav-link:hover {
+            color: black;
+            font-weight: bold;
+        }
+        
+        .jumbotron {
+            background-color: #FEC600;
+            padding-top: 0%;
+            display: flex;
+            align-items: center;
+            margin-top: 6.5%;
+        }
+        
+        .jumbotron .container {
+            display: flex;
+            flex-direction: column;
+            /* Menetapkan tata letak kontainer ke kolom */
+            align-items: flex-start;
+            /* Memposisikan kontainer secara horizontal ke kiri */
+            text-align: left;
+            /* Memastikan teks dalam kontainer berada di kiri */
+        }
+        
+        .row h1 {
+            color: #3A3934;
+            font-weight: bold;
+        }
+        
+        .lead {
+            font-weight: bold;
+        }
+        
+        .jumbotron .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .jumbotron img {
+            display: flex;
+            justify-content: flex-end;
+            /* Mengatur gambar-gambar di ujung kanan */
+            flex-direction: column;
+        }
+        
+        .sambaljumbo {
+            width: 1000px;
+            height: 600px;
+            transition: transform 0.5s ease;
+            padding-bottom: 0;
+        }
+        
+        .sambaljumbo:hover {
+            transform: scale(1.3);
+        }
+        
+        .btn-jumbo {
+            background-color: #EB3E48;
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 10px 25px;
+            transition: transform 0.5s ease;
+            font-weight: bold;
+            border: none;
+        }
+        
+        .btn-jumbo:hover {
+            background-color: #ffffff;
+            color: #3A3934;
+            border-radius: 20px;
+            padding: 10px 25px;
+            border: none;
+        }
+        /* buat pilih gengsmu */
+        
+        .red-text {
+            color: #EB3E48;
+        }
+        /* CSS untuk mengatur ukuran kartu (card) */
+        /* CSS untuk mengatur ukuran kartu (card) */
+        
+        .card-geng {
+            max-width: 18rem;
+            /* Lebar maksimum kartu */
+            margin-bottom: 0px;
+            /* Efek bayangan */
+            border: none;
+        }
+        /* CSS untuk mengatur ukuran gambar pada kartu */
+        
+        .card-geng img {
+            height: 120px;
+            /* Tinggi gambar */
+            width: 120px;
+            /* Lebar gambar */
+            transition: cubic-bezier(0.23, 1, 0.320, 1);
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        
+        .card-geng img:hover {
+            transform: scale(1.1);
+        }
+        /* CSS untuk memastikan gambar tetap proporsional */
+        
+        .card-img-top {
+            width: 100%;
+            /* Lebar gambar mencakup seluruh lebar kartu */
+            height: auto;
+            /* Tinggi gambar menyesuaikan dengan lebar kartu */
+        }
+        
+        .card-nama-geng {
+            margin-bottom: 0px;
+        }
+        
+        .product-image .open {
+            display: none;
+            /* Sembunyikan gambar terbuka secara default */
+        }
+        
+        .product-card {
+            position: relative;
+            max-width: 18rem;
+            /* Lebar maksimum kartu */
+            height: 100%;
+            margin: 10px;
+            /* Atur margin secara keseluruhan */
+            padding: 10px;
+            /* Atur padding secara keseluruhan */
+            /* Menetapkan tinggi kartu */
+        }
+        
+        .product-image {
+            height: 200px;
+            width: 50px;
+            padding: 0;
+            overflow: hidden;
+            /* Menghilangkan bagian gambar yang melebihi ukuran */
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            /* Mengisi tinggi gambar sesuai parent */
+            object-fit: cover;
+            /* Membuat gambar mengisi seluruh area */
+        }
+        
+        .harga {
+            font-size: 20px;
+        }
+        
+        .product-info h5 {
+            font-size: 15px;
+        }
+        
+        .product-info p {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        
+        .btn-beli {
+            background-color: #EB3E48;
+            color: #ffffff;
+            font-weight: bold;
+            width: 200px;
+            border: none;
+        }
+        
+        .btn-beli:hover {
+            background-color: #7b303200;
+            color: #EB3E48;
+            border: 1px solid #EB3E48;
+        }
+        
+        .page-link {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            width: 30px;
+            text-align-last: center;
+        }
+        
+        .page-item.active .page-link {
+            background-color: #EB3E48 !important;
+            color: white !important;
+            border: 1px solid black;
+        }
