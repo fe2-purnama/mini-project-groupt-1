@@ -30,7 +30,14 @@
         }
         
         .navbar {
+            background-color: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(10px);
+            transition: background-color 0.3s;
             z-index: 999;
+        }
+        
+        .navbar-scrolled {
+            background-color: rgba(255, 255, 255, 0.8);
         }
         
         .nav-link {
@@ -224,34 +231,48 @@
             color: white !important;
             border: 1px solid black;
         }
-
         /*Kontak*/
+        
         .kontak {
             background-color: #393E66;
         }
-
+        
         .judul_kontak {
             color: #ffffff;
         }
-
+        
         .col-divider {
-            border-right: 1px solid #000; /* Atur warna dan lebar garis pembatas */
-            padding-right: 15px; /* Tambahkan padding kanan untuk memberi jarak antara gambar dan garis */
-            margin-right: 15px; /* Tambahkan margin kanan untuk memberi jarak di antara kolom */
+            border-right: 1px solid #000;
+            /* Atur warna dan lebar garis pembatas */
+            padding-right: 15px;
+            /* Tambahkan padding kanan untuk memberi jarak antara gambar dan garis */
+            margin-right: 15px;
+            /* Tambahkan margin kanan untuk memberi jarak di antara kolom */
         }
+        
         .col-divider:last-child {
-            border-right: none; /* Hilangkan garis pembatas di kolom terakhir */
-            padding-right: 0; /* Hilangkan padding kanan di kolom terakhir */
-            margin-right: 0; /* Hilangkan margin kanan di kolom terakhir */
+            border-right: none;
+            /* Hilangkan garis pembatas di kolom terakhir */
+            padding-right: 0;
+            /* Hilangkan padding kanan di kolom terakhir */
+            margin-right: 0;
+            /* Hilangkan margin kanan di kolom terakhir */
         }
-
+        
         .row-divider {
-            border-top: 1px solid #000; /* Atur warna dan ketebalan garis pembatas */
-            margin-top: 15px; /* Tambahkan margin atas untuk memberi jarak antara baris */
-            padding-top: 15px; /* Tambahkan padding atas untuk memberi jarak antara gambar dan garis */
+            border-top: 1px solid #000;
+            /* Atur warna dan ketebalan garis pembatas */
+            margin-top: 15px;
+            /* Tambahkan margin atas untuk memberi jarak antara baris */
+            padding-top: 15px;
+            /* Tambahkan padding atas untuk memberi jarak antara gambar dan garis */
         }
+        
         .row-divider:first-child {
-            border-top: none; /* Hilangkan garis pembatas di baris pertama */
-            margin-top: 0; /* Hilangkan margin atas di baris pertama */
-            padding-top: 0; /* Hilangkan padding atas di baris pertama */
+            border-top: none;
+            /* Hilangkan garis pembatas di baris pertama */
+            margin-top: 0;
+            /* Hilangkan margin atas di baris pertama */
+            padding-top: 0;
+            /* Hilangkan padding atas di baris pertama */
         }
