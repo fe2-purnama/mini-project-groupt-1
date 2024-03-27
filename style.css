@@ -249,51 +249,31 @@
             outline: none !important;
             box-shadow: none !important;
         }
+
         /*Kontak*/
-        
         .kontak {
             background-color: #393E66;
         }
         
-        .judul_kontak {
-            color: #ffffff;
-        }
-        
         .col-divider {
-            border-right: 1px solid #000;
-            /* Atur warna dan lebar garis pembatas */
-            padding-right: 15px;
-            /* Tambahkan padding kanan untuk memberi jarak antara gambar dan garis */
-            margin-right: 15px;
-            /* Tambahkan margin kanan untuk memberi jarak di antara kolom */
+            border-right: 3px solid #fff;
+            padding-right: 5px; 
+            margin-right: 5px;
+            height: 50%;
         }
-        
         .col-divider:last-child {
-            border-right: none;
-            /* Hilangkan garis pembatas di kolom terakhir */
             padding-right: 0;
-            /* Hilangkan padding kanan di kolom terakhir */
-            margin-right: 0;
-            /* Hilangkan margin kanan di kolom terakhir */
+            margin-right: 0; 
+        }
+        .kontak_list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .kontak_list_isi a{
+            text-decoration: none;
+            color: #E5E5E5;
         }
         
-        .row-divider {
-            border-top: 1px solid #000;
-            /* Atur warna dan ketebalan garis pembatas */
-            margin-top: 15px;
-            /* Tambahkan margin atas untuk memberi jarak antara baris */
-            padding-top: 15px;
-            /* Tambahkan padding atas untuk memberi jarak antara gambar dan garis */
-        }
-        
-        .row-divider:first-child {
-            border-top: none;
-            /* Hilangkan garis pembatas di baris pertama */
-            margin-top: 0;
-            /* Hilangkan margin atas di baris pertama */
-            padding-top: 0;
-            /* Hilangkan padding atas di baris pertama */
-        }
         /*testimoni*/
         
         .container1 {
@@ -425,17 +405,6 @@
             padding: 70px;
         }
         
-        h1 {
-            font-weight: bold 600;
-            text-align: center;
-            margin-bottom: 20px;
-            font-family: "Poppins", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            margin: 0;
-            padding-bottom: 40px;
-        }
-        
         form {
             margin-bottom: 20px;
             margin: auto;
@@ -529,7 +498,7 @@
             /* Membuat tombol berada di tengah halaman secara horizontal */
         }
         
-        button:hover {
+        .button1 button:hover {
             background-color: #45a049;
         }
         
