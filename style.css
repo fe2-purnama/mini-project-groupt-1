@@ -477,3 +477,51 @@
     justify-content: center; /* Mengatur tombol berada di tengah halaman secara horizontal */
   }
   
+  /* Footer */
+  footer{
+    background-color: hsl(231, 32%, 9%);
+    text-align: center;
+    padding: 50px;
+  
+  }
+  .footer-container {
+    display:flex;
+    color: white;
+    text-align: start;
+    flex-wrap: wrap;
+  }
+  .column{
+    margin: 20px auto;
+    
+     font-size: 18px;
+    }
+  .footer-container .column1{
+    text-align: center;
+    margin: 0px 50px 0px auto;
+    text-align: start;
+  }
+  .footer-container .column2{
+    text-align: center;
+    margin: 0px 100px auto;
+    text-align: start;
+  }
+
+  .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  .column ul li{
+   padding: 7px;
+
+}
+  .column ul li a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.column ul li a:hover {
+  color: #d3d3d3;
+}
+.column ul li a:active {
+  color: #FEC600;
+}
