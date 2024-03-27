@@ -354,7 +354,7 @@
           .rating {
             margin-top: 0;
             margin-bottom: 10px; /* Mengurangi jarak di bawah .rating */
-            font-weight: bold; /* Menjadikan teks dalam .rating menjadi tebal (bold) */
+            font-weight:normal; /* Menjadikan teks dalam .rating menjadi tebal (bold) */
           }
           
           .nama {
@@ -467,7 +467,7 @@
   
   button {
     padding: 10px 20px;
-    background-color: #023f04;
+    background-color: rgba(69, 139, 72, 1);
     color: white;
     border: none;
     width: 30%;
