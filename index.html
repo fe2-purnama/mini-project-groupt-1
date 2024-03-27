@@ -18,7 +18,7 @@
     </header>
 
     <!-- Navbar -->
-    <nav class="navbar fixed-top bg-body-tertiary mt-3 shadow-sm p-3 mb-0 bg-body-tertiary rounded">
+    <nav class="navbar fixed-top bg-body-tertiary mt-3 shadow-sm p-3 mb-0 bg-body-tertiary rounded ">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://i.ibb.co/nmZwLS0/image-Photoroom-png-Photoroom-1.png" alt="Bootstrap" width="65" height="40">
@@ -27,15 +27,30 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Beranda</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#produk">Produk</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#faq">FAQ</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Produk
+                    </a>
+                    <ul class="dropdown-menu navdrop mt-3 shadow-sm">
+                        <li><a class="dropdown-item" href="#gengs">Aneka Gengs</a></li>
+                        <li><a class="dropdown-item" href="#produk">Varian</a></li>
+                        <li><a class="dropdown-item" href="#testi">Testimoni</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#aboutus">Tentang Kami </a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Lainnya
+                    </a>
+                    <ul class="dropdown-menu navdrop mt-3 shadow-sm">
+                        <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                        <li><a class="dropdown-item" href="#contact">Hubungi Kami</a></li>
+                        <li><a class="dropdown-item" href="#kritik">Kritik & Saran</a></li>
+                    </ul>
+                </li>
+
             </ul>
         </div>
     </nav>
@@ -57,7 +72,8 @@
     </div>
 
     <!-- Pilih Gengs -->
-    <article class="gengs">
+    <section id="gengs"></section>
+    <article class="gengs mt-5 py-5">
         <div class="container mt-3">
             <div class="d-flex justify-content-between">
                 <h5 class="fw-bolder">Pilih <span class="red-text">Gengs</span>mu!</h5>
@@ -133,10 +149,11 @@
     </div>
 
     <!-- Aneka Varian Hotgengs -->
-    <article class="produk ">
+    <section id="produk"></section>
+    <article class="produk mt-5 py-4">
         <div class="container mt-lg-5">
             <div class="d-flex justify-content-between mt-5">
-                <h5 class="fw-bolder " id="produk">Aneka Varian <span class="red-text">HotGengs!</span></h5>
+                <h5 class="fw-bolder ">Aneka Varian <span class="red-text">HotGengs!</span></h5>
                 <!-- Jarak di antara h5 dan card -->
                 <div></div>
             </div>
@@ -343,57 +360,96 @@
     </article>
 
     <!-- Testimoni -->
-    <div class="testimoni123">
-    <div class="container1">
-        <div style="display: flex; justify-content: center; gap: 10px;margin-left: -440PX; ">
+    <section id="testi"></section>
+    <div class="container-fluid container1 mt-5 py-5">
+        <div class="container mt-2">
+            <div class="d-flex justify-content-between">
 
-            <h1 style="color: aliceblue; font-family: Poppins; margin-top: 40px;">TESTIMONY</h1>
-            <h1 style="color: red; font-style: Poppins; margin-top: 40px">HotGengs</h1>
-            <h1 style="color: black; margin-top: 40px">!</h1>
-        </div>
-        
-
-        <div class="testimonial-testimoni">
-            <div class="testimonial-card">
-                <div><IMG class="avatar" src="img/avatar-svgrepo-com.svg" /></div>
-                <div class="content">
-                    <div class="rating">
-                        <h2 class="nama">Jane Smith</h2>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <div class="paragraft">
-                        <p>Sambel nya bener2 enak, isi cumi, jambal, paru,sapi nya banyaakkkk banget .. bener2 isi nya banyak, ga hanya cabe nya .. ditambah nasi aja juga, sudah nikmat bgt .. the best bgt, sambel nya..
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-
-
-                </div>
+                <h5 class="fw-bolder mt-4 text-light">Testimoni <span class="red-text">HotGengs!</span></h5>
             </div>
-            
+
+
             <div class="testimonial-testimoni">
                 <div class="testimonial-card">
-                <div><IMG class="avatar1" src="img/avatar-svgrepo-com.svg" /></div>
-                <div class="content1">
-                    <div class="rating">
-                        <h2 class="nama">Jane Smith</h2>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <div class="paragraft">
-                            <p>Sambel nya bener2 enak, isi cumi, jambal, paru,sapi nya banyaakkkk banget .. bener2 isi nya banyak, ga hanya cabe nya .. ditambah nasi aja juga, sudah nikmat bgt .. the best bgt, sambel nya..
-                            </p>
+                    <div>
+                        <IMG class="avatar" src="img/avatar-svgrepo-com.svg" />
+                    </div>
+                    <div class="content">
+                        <div class="rating">
+                            <h5 class="nama fw-bold">Jane Smith</h5>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <div class="paragraft">
+                                <p>Sambel nya bener2 enak, isi cumi, jambal, paru,sapi nya banyaakkkk banget .. bener2 isi nya banyak, ga hanya cabe nya .. ditambah nasi aja juga, sudah nikmat bgt .. the best bgt, sambel nya..
+                                </p>
                             </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="testimonial-testimoni">
+                <div class="testimonial-card">
+                    <div>
+                        <IMG class="avatar1" src="img/avatar-svgrepo-com.svg" />
+                    </div>
+                    <div class="content1">
+                        <div class="rating">
+                            <h5 class="nama fw-bold">Jane Smith</h5>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <div class="paragraft">
+                                <p>Sambel nya bener2 enak, isi cumi, jambal, paru,sapi nya banyaakkkk banget .. bener2 isi nya banyak, ga hanya cabe nya .. ditambah nasi aja juga, sudah nikmat bgt .. the best bgt, sambel nya..
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Tentang Kami -->
+
+    <!-- kritik dan saran -->
+    <div class="kritiksaran">
+        <div class="containerkritik">
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <h1>BERI</h1>
+                <h1>KAMI</h1>
+                <h1 style="color: red">KRITIK</h1>
+                <h1>DAN</h1>
+                <h1 style="color: red">SARAN</h1>
             </div>
 
+            <form>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="nama"><b>Nama:</b></label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama anda" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="email"><b>Email:</b></label>
+                        <input type="email" id="email" name="email" placeholder="Masukkan email anda" required />
+                    </div>
+                </div>
+
+                <label for="kritik_saran"> <b style="margin-left: -80px; padding-top: 90px;">Kritik dan Saran:</b></label>
+                <textarea id="kritik_saran" name="kritik_saran" rows="5" placeholder="Masukkan kritik dan saran anda" required></textarea>
+                <div class="posisi-btn">
+                    <button type="submit"><b> Submit</b></button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- FAQ -->
     <article class="faq">
@@ -413,7 +469,8 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Jika saat sambal diterima dalam keadaan rusak atau buruk, Anda dapat menghubungi layanan pelanggan kami dalam waktu 24 jam setelah menerima pesanan. Kami akan dengan senang hati mengganti atau mengembalikan uang Anda sesuai kebijakan pengembalian yang berlaku.
+                                Jika saat sambal diterima dalam keadaan rusak atau buruk, Anda dapat menghubungi layanan pelanggan kami dalam waktu 24 jam setelah menerima pesanan. Kami akan dengan senang hati mengganti atau mengembalikan uang Anda sesuai kebijakan pengembalian yang
+                                berlaku.
                             </div>
                         </div>
                     </div>
@@ -425,7 +482,8 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Jika produk yang Anda terima tidak sesuai dengan pesanan Anda, silakan hubungi tim layanan pelanggan kami segera setelah menerima produk tersebut. Kami akan melakukan pengecekan dan memberikan solusi yang sesuai, termasuk penggantian produk atau pengembalian uang Anda.
+                                Jika produk yang Anda terima tidak sesuai dengan pesanan Anda, silakan hubungi tim layanan pelanggan kami segera setelah menerima produk tersebut. Kami akan melakukan pengecekan dan memberikan solusi yang sesuai, termasuk penggantian produk atau pengembalian
+                                uang Anda.
                             </div>
                         </div>
                     </div>
@@ -437,64 +495,14 @@
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Jika produk yang Anda terima telah melewati masa kadaluarsa, kami mohon maaf atas ketidaknyamanan ini. Silakan hubungi tim layanan pelanggan kami untuk memberi tahu masalah ini. Kami akan segera mengatasi situasi ini dengan memberikan penggantian produk yang baru atau pengembalian uang Anda sesuai kebijakan pengembalian kami.
+                                Jika produk yang Anda terima telah melewati masa kadaluarsa, kami mohon maaf atas ketidaknyamanan ini. Silakan hubungi tim layanan pelanggan kami untuk memberi tahu masalah ini. Kami akan segera mengatasi situasi ini dengan memberikan penggantian produk
+                                yang baru atau pengembalian uang Anda sesuai kebijakan pengembalian kami.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </article>
-    <!-- Tentang Kami -->
-
-    <!-- kritik dan saran -->
-<div class="kritiksaran">
-    <div class="containerkritik">
-        <div style="display: flex; justify-content: center; gap: 10px;">
-          <h1>BERI</h1>
-          <h1>KAMI</h1>
-          <h1 style="color: red">KRITIK</h1>
-          <h1>DAN</h1>
-          <h1 style="color: red">SARAN</h1>
-        </div>
-  
-        <form>
-          <div class="form-row">
-            <div class="input-group">
-              <label for="nama"><b>Nama:</b></label>
-              <input
-                type="text"
-                id="nama"
-                name="nama"
-                placeholder="Masukkan nama anda"
-                required
-              />
-            </div>
-            <div class="input-group">
-              <label for="email"><b>Email:</b></label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Masukkan email anda"
-                required
-              />
-            </div>
-          </div>
-  
-          <label for="kritik_saran"> <b style="margin-left: -80px; padding-top: 90px;">Kritik dan Saran:</b></label>
-          <textarea
-            id="kritik_saran"
-            name="kritik_saran"
-            rows="5"
-            placeholder="Masukkan kritik dan saran anda"
-            required
-          ></textarea>
-          <div class="posisi-btn">
-            <button type="submit"><b> Submit</b></button>
-          </div>
-        </form>
-      </div>
-      </div>
+    </article>
 
     <!-- Hubungi Kami -->
     <article class="kontak">
