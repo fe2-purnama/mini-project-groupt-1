@@ -255,3 +255,223 @@
             margin-top: 0; /* Hilangkan margin atas di baris pertama */
             padding-top: 0; /* Hilangkan padding atas di baris pertama */
         }
+
+        /*testimoni*/
+
+        .container1 {
+            background-color: #FEC600;
+        }
+        .testimonial-testimoni {
+            display: flex;
+            flex-direction: column; /* Mengatur tata letak menjadi kolom */
+            justify-content: center; /* Menjadikan konten berada di tengah secara vertikal */
+            align-items: center; /* Menjadikan konten berada di tengah secara horizontal */
+            gap: 20px;
+          }
+
+
+          .testimonial-testimoni h1 {
+            font-family:'Poppins';
+            margin-top: 20px;
+          }
+          
+          .testimonial-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 600px;
+            display: flex;
+            gap: 50px;
+            border-radius: 80px;
+          }
+          
+          .avatar {
+            width: 100px;
+            height: 80px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
+          
+          .content {
+            text-align: left; /* Menjadikan teks menjadi rata kiri */
+          }
+          .testimonial-testimoni {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-family: "Poppins";
+          }
+
+          .testimonial-testimoni {
+            display: flex;
+            flex-direction: column; /* Mengatur tata letak menjadi kolom */
+            justify-content: center; /* Menjadikan konten berada di tengah secara vertikal */
+            align-items: center; /* Menjadikan konten berada di tengah secara horizontal */
+            gap: 20px;
+          }
+
+          
+          .testimonial-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 600px;
+            display: flex;
+            gap: 50px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+          }
+          
+          .avatar1 {
+            width: 100px;
+            height: 80px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
+          
+          .content1 {
+            text-align: left; /* Menjadikan teks menjadi rata kiri */
+          }
+          .rating {
+            margin-top: 0;
+            margin-bottom: 10px; /* Mengurangi jarak di bawah .rating */
+            font-weight: bold; /* Menjadikan teks dalam .rating menjadi tebal (bold) */
+          }
+          
+          .nama {
+            margin-bottom: 5px; /* Mengurangi jarak di bawah nama */
+          }
+          
+          .star {
+            color: gold;
+            font-size: 24px; /* Mengatur ukuran bintang */
+            margin-right: 5px; /* Menambahkan sedikit jarak di sebelah kanan bintang */
+          }
+          
+          .paragraft {
+            margin-top: 0; /* Menghapus margin atas pada elemen p */
+            margin-bottom: 0; /* Menghapus margin bawah pada elemen p */
+          }
+          
+
+        
+        
+        /*Kritik dan saran*/
+
+.kritiksaran {
+    background-color: #FEC600;
+    margin: auto;
+}
+
+  .containerkritik {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 70px;
+  }
+  
+  h1 {
+    font-weight: bold 600;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    margin: auto;
+    padding-inline-start: 26px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-width: 680px;
+    margin-inline: -80px;
+    align-items: center;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column; /* Mengubah orientasi menjadi vertikal */
+    margin-bottom: 10px;
+    width: 270px;
+    padding-right: 10px;
+  }
+  
+  .input-group label {
+    width: auto; /* Mengubah lebar label menjadi otomatis */
+    margin-right: 0; /* Menghilangkan margin kanan */
+    margin-bottom: 10px; /* Memberikan jarak antara label dan input */
+  }
+  
+  .input-group input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px;
+    width: 135%; /* Menjadikan input 100% lebar */
+    margin: auto;
+  }
+  
+  .input-group input[type="text"],
+  .input-group input[type="email"],
+  .input-group textarea {
+    padding: 15px; /* Menyesuaikan padding untuk membuat semua input dan textarea memiliki ukuran yang sama */
+    height: 50px; /* Menjadikan tinggi input teks dan email sama */
+    width: 100%; /* Menjadikan lebar semua input 100% */
+  }
+  
+  .input-group input[type="text"] {
+    margin-top: 0; /* Menghapus margin atas untuk input nama */
+  }
+  
+  .input-group:nth-child(2) input[type="email"] {
+    margin-top: 0; /* Menghapus margin atas untuk input email */
+  }
+  
+  textarea {
+    padding: 20px; /* Menyesuaikan padding untuk membuat textarea memiliki ukuran yang sama */
+    height: 150px; /* Menjadikan tinggi textarea sama */
+    width: 135%; /* Menjadikan lebar textarea 100% */
+    box-shadow: 2px 2px 2px;
+    border-radius: 7px;
+    margin: auto;
+    margin-inline: -80px;
+    margin-top: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #023f04;
+    color: white;
+    border: none;
+    width: 30%;
+    border-radius: 35px;
+    cursor: pointer;
+  
+    align-items: center; /* Ini tidak diperlukan untuk tombol */
+    margin: 0 auto; /* Membuat tombol berada di tengah halaman secara horizontal */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .posisi-btn {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; /* Mengatur tombol berada di tengah halaman secara horizontal */
+  }
+  
