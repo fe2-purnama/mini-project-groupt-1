@@ -30,7 +30,12 @@
         }
         
         .navbar {
+            background-color: rgb(255, 255, 255);
             z-index: 999;
+        }
+        
+        .navbar-scrolled {
+            background-color: rgba(255, 255, 255, 0.8);
         }
         
         .nav-link {
@@ -40,6 +45,10 @@
         .nav-link:hover {
             color: black;
             font-weight: bold;
+        }
+        
+        .navdrop {
+            border: none;
         }
         
         .jumbotron {
@@ -60,9 +69,10 @@
             /* Memastikan teks dalam kontainer berada di kiri */
         }
         
-        .row h1 {
+        .jumbotron .row h1 {
             color: #3A3934;
             font-weight: bold;
+            text-align: left;
         }
         
         .lead {
@@ -224,71 +234,69 @@
             color: white !important;
             border: 1px solid black;
         }
+        
         .accordion-button {
             background-color: #ffffff;
             color: #000000;
         }
+        
         .accordion-button:not(.collapsed) {
-            background-color: #ffffff; 
+            background-color: #ffffff;
             color: #000000;
-            
         }
         
         .accordion-button:focus {
-            outline: none !important; 
+            outline: none !important;
             box-shadow: none !important;
         }
+
         /*Kontak*/
         .kontak {
             background-color: #393E66;
         }
-
-        .judul_kontak {
-            color: #ffffff;
-        }
-
+        
         .col-divider {
-            border-right: 1px solid #000; /* Atur warna dan lebar garis pembatas */
-            padding-right: 15px; /* Tambahkan padding kanan untuk memberi jarak antara gambar dan garis */
-            margin-right: 15px; /* Tambahkan margin kanan untuk memberi jarak di antara kolom */
+            border-right: 3px solid #fff;
+            padding-right: 5px; 
+            margin-right: 5px;
+            height: 50%;
         }
         .col-divider:last-child {
-            border-right: none; /* Hilangkan garis pembatas di kolom terakhir */
-            padding-right: 0; /* Hilangkan padding kanan di kolom terakhir */
-            margin-right: 0; /* Hilangkan margin kanan di kolom terakhir */
+            padding-right: 0;
+            margin-right: 0; 
         }
-
-        .row-divider {
-            border-top: 1px solid #000; /* Atur warna dan ketebalan garis pembatas */
-            margin-top: 15px; /* Tambahkan margin atas untuk memberi jarak antara baris */
-            padding-top: 15px; /* Tambahkan padding atas untuk memberi jarak antara gambar dan garis */
+        .kontak_list {
+            list-style-type: none;
+            padding: 0;
         }
-        .row-divider:first-child {
-            border-top: none; /* Hilangkan garis pembatas di baris pertama */
-            margin-top: 0; /* Hilangkan margin atas di baris pertama */
-            padding-top: 0; /* Hilangkan padding atas di baris pertama */
+        .kontak_list_isi a{
+            text-decoration: none;
+            color: #E5E5E5;
         }
-
+        
         /*testimoni*/
-
+        
         .container1 {
             background-color: #FEC600;
         }
+        
         .testimonial-testimoni {
             display: flex;
-            flex-direction: column; /* Mengatur tata letak menjadi kolom */
-            justify-content: center; /* Menjadikan konten berada di tengah secara vertikal */
-            align-items: center; /* Menjadikan konten berada di tengah secara horizontal */
+            flex-direction: column;
+            /* Mengatur tata letak menjadi kolom */
+            justify-content: center;
+            /* Menjadikan konten berada di tengah secara vertikal */
+            align-items: center;
+            /* Menjadikan konten berada di tengah secara horizontal */
             gap: 20px;
-          }
-
-
-          .testimonial-testimoni h1 {
-            font-family:'Poppins';
+        }
+        
+        .testimonial-testimoni h1 {
+            font-family: 'Poppins';
             margin-top: 20px;
-          }
-          
-          .testimonial-card {
+        }
+        
+        .testimonial-card {
             background-color: #f9f9f9;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -297,37 +305,41 @@
             display: flex;
             gap: 50px;
             border-radius: 80px;
-          }
-          
-          .avatar {
+        }
+        
+        .avatar {
             width: 100px;
             height: 80px;
             background-color: #ccc;
             border-radius: 50%;
             margin-bottom: 10px;
             margin-top: 10px;
-          }
-          
-          .content {
-            text-align: left; /* Menjadikan teks menjadi rata kiri */
-          }
-          .testimonial-testimoni {
+        }
+        
+        .content {
+            text-align: left;
+            /* Menjadikan teks menjadi rata kiri */
+        }
+        
+        .testimonial-testimoni {
             display: flex;
             justify-content: center;
             gap: 20px;
             font-family: "Poppins";
-          }
-
-          .testimonial-testimoni {
+        }
+        
+        .testimonial-testimoni {
             display: flex;
-            flex-direction: column; /* Mengatur tata letak menjadi kolom */
-            justify-content: center; /* Menjadikan konten berada di tengah secara vertikal */
-            align-items: center; /* Menjadikan konten berada di tengah secara horizontal */
+            flex-direction: column;
+            /* Mengatur tata letak menjadi kolom */
+            justify-content: center;
+            /* Menjadikan konten berada di tengah secara vertikal */
+            align-items: center;
+            /* Menjadikan konten berada di tengah secara horizontal */
             gap: 20px;
-          }
-
-          
-          .testimonial-card {
+        }
+        
+        .testimonial-card {
             background-color: #f9f9f9;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -337,44 +349,49 @@
             gap: 50px;
             margin-bottom: 40px;
             margin-top: 40px;
-          }
-          
-          .avatar1 {
+        }
+        
+        .avatar1 {
             width: 100px;
             height: 80px;
             background-color: #ccc;
             border-radius: 50%;
             margin-bottom: 10px;
             margin-top: 10px;
-          }
-          
-          .content1 {
-            text-align: left; /* Menjadikan teks menjadi rata kiri */
-          }
-          .rating {
+        }
+        
+        .content1 {
+            text-align: left;
+            /* Menjadikan teks menjadi rata kiri */
+        }
+        
+        .rating {
             margin-top: 0;
-            margin-bottom: 10px; /* Mengurangi jarak di bawah .rating */
-            font-weight:normal; /* Menjadikan teks dalam .rating menjadi tebal (bold) */
-          }
-          
-          .nama {
-            margin-bottom: 5px; /* Mengurangi jarak di bawah nama */
-          }
-          
-          .star {
+            margin-bottom: 10px;
+            /* Mengurangi jarak di bawah .rating */
+            font-weight: normal;
+            /* Menjadikan teks dalam .rating menjadi tebal (bold) */
+        }
+        
+        .nama {
+            margin-bottom: 5px;
+            /* Mengurangi jarak di bawah nama */
+        }
+        
+        .star {
             color: gold;
-            font-size: 24px; /* Mengatur ukuran bintang */
-            margin-right: 5px; /* Menambahkan sedikit jarak di sebelah kanan bintang */
-          }
-          
-          .paragraft {
-            margin-top: 0; /* Menghapus margin atas pada elemen p */
-            margin-bottom: 0; /* Menghapus margin bawah pada elemen p */
-          }
-          
-
+            font-size: 24px;
+            /* Mengatur ukuran bintang */
+            margin-right: 5px;
+            /* Menambahkan sedikit jarak di sebelah kanan bintang */
+        }
         
-        
+        .paragraft {
+            margin-top: 0;
+            /* Menghapus margin atas pada elemen p */
+            margin-bottom: 0;
+            /* Menghapus margin bawah pada elemen p */
+        }
         /*Kritik dan saran*/
 
 .kritiksaran {
@@ -477,7 +494,6 @@
     justify-content: center; /* Mengatur tombol berada di tengah halaman secara horizontal */
   }
   
-  /* Footer */
   footer{
     background-color: hsl(231, 32%, 9%);
     text-align: center;
