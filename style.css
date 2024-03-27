@@ -234,6 +234,21 @@
             color: white !important;
             border: 1px solid black;
         }
+        
+        .accordion-button {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .accordion-button:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
         /*Kontak*/
         
         .kontak {
