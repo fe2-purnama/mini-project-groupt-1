@@ -146,8 +146,10 @@
             margin-bottom: 0px;
         }
         
-        .card-geng img:hover {
+        .card-geng:hover {
             transform: scale(1.1);
+            transition: transform 0.3s ease;
+            border: 2px solid #FEC600;
         }
         /* CSS untuk memastikan gambar tetap proporsional */
         
@@ -222,6 +224,15 @@
             border: 1px solid #EB3E48;
         }
         
+        .btn-beli:active {
+            background-color: #EB3E48;
+            /* Tetapkan warna latar belakang menjadi merah saat tombol diklik */
+            color: #ffffff;
+            /* Tetapkan warna teks menjadi putih saat tombol diklik */
+            border: none;
+            /* Hilangkan border saat tombol diklik */
+        }
+        
         .page-link {
             background-color: #ffffff;
             color: rgb(0, 0, 0);
@@ -249,31 +260,33 @@
             outline: none !important;
             box-shadow: none !important;
         }
-
         /*Kontak*/
+        
         .kontak {
             background-color: #393E66;
         }
         
         .col-divider {
             border-right: 3px solid #fff;
-            padding-right: 5px; 
+            padding-right: 5px;
             margin-right: 5px;
             height: 50%;
         }
+        
         .col-divider:last-child {
             padding-right: 0;
-            margin-right: 0; 
+            margin-right: 0;
         }
+        
         .kontak_list {
             list-style-type: none;
             padding: 0;
         }
-        .kontak_list_isi a{
+        
+        .kontak_list_isi a {
             text-decoration: none;
             color: #E5E5E5;
         }
-        
         /*testimoni*/
         
         .container1 {
@@ -350,6 +363,12 @@
             margin-bottom: 40px;
             margin-top: 40px;
         }
+        /* Tentang Kami */
+        
+        .text {
+            text-align: justify;
+        }
+        /* akhir tentang kami */
         
         .avatar1 {
             width: 100px;
@@ -393,151 +412,170 @@
             /* Menghapus margin bawah pada elemen p */
         }
         /*Kritik dan saran*/
-
-.kritiksaran {
-    background-color: #FEC600;
-    margin: auto;
-}
-
-  .containerkritik {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 70px;
-  }
-  
-  form {
-    margin-bottom: 20px;
-    margin: auto;
-    padding-inline-start: 26px;
-  }
-  
-  .form-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    max-width: 680px;
-    margin-inline: -80px;
-    align-items: center;
-  }
-  
-  .input-group {
-    display: flex;
-    flex-direction: column; /* Mengubah orientasi menjadi vertikal */
-    margin-bottom: 10px;
-    width: 270px;
-    padding-right: 10px;
-  }
-  
-  .input-group label {
-    width: auto; /* Mengubah lebar label menjadi otomatis */
-    margin-right: 0; /* Menghilangkan margin kanan */
-    margin-bottom: 10px; /* Memberikan jarak antara label dan input */
-  }
-  
-  .input-group input {
-    flex: 1;
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px;
-    width: 135%; /* Menjadikan input 100% lebar */
-    margin: auto;
-  }
-  
-  .input-group input[type="text"],
-  .input-group input[type="email"],
-  .input-group textarea {
-    padding: 15px; /* Menyesuaikan padding untuk membuat semua input dan textarea memiliki ukuran yang sama */
-    height: 50px; /* Menjadikan tinggi input teks dan email sama */
-    width: 100%; /* Menjadikan lebar semua input 100% */
-  }
-  
-  .input-group input[type="text"] {
-    margin-top: 0; /* Menghapus margin atas untuk input nama */
-  }
-  
-  .input-group:nth-child(2) input[type="email"] {
-    margin-top: 0; /* Menghapus margin atas untuk input email */
-  }
-  
-  textarea {
-    padding: 20px; /* Menyesuaikan padding untuk membuat textarea memiliki ukuran yang sama */
-    height: 150px; /* Menjadikan tinggi textarea sama */
-    width: 135%; /* Menjadikan lebar textarea 100% */
-    box-shadow: 2px 2px 2px;
-    border-radius: 7px;
-    margin: auto;
-    margin-inline: -80px;
-    margin-top: 15px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: rgba(69, 139, 72, 1);
-    color: white;
-    border: none;
-    width: 30%;
-    border-radius: 35px;
-    cursor: pointer;
-  
-    align-items: center; /* Ini tidak diperlukan untuk tombol */
-    margin: 0 auto; /* Membuat tombol berada di tengah halaman secara horizontal */
-  }
-  
-  .button1 button:hover {
-    background-color: #45a049;
-  }
-  
-  .posisi-btn {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center; /* Mengatur tombol berada di tengah halaman secara horizontal */
-  }
-  
-  footer{
-    background-color: hsl(231, 32%, 9%);
-    text-align: center;
-    padding: 50px;
-  
-  }
-  .footer-container {
-    display:flex;
-    color: white;
-    text-align: start;
-    flex-wrap: wrap;
-  }
-  .column{
-    margin: 20px auto;
-    
-     font-size: 18px;
-    }
-  .footer-container .column1{
-    text-align: center;
-    margin: 0px 50px 0px auto;
-    text-align: start;
-  }
-  .footer-container .column2{
-    text-align: center;
-    margin: 0px 100px auto;
-    text-align: start;
-  }
-
-  .column ul {
-    list-style: none;
-    padding: 0;
-  }
-  .column ul li{
-   padding: 7px;
-
-}
-  .column ul li a {
-    text-decoration: none;
-    color: #ffffff;
-
-}
-.column ul li a:hover {
-  color: #d3d3d3;
-}
-.column ul li a:active {
-  color: #FEC600;
-}
+        
+        .kritiksaran {
+            background-color: #FEC600;
+            margin: auto;
+        }
+        
+        .containerkritik {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 70px;
+        }
+        
+        form {
+            margin-bottom: 20px;
+            margin: auto;
+            padding-inline-start: 26px;
+        }
+        
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            max-width: 680px;
+            margin-inline: -80px;
+            align-items: center;
+        }
+        
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            /* Mengubah orientasi menjadi vertikal */
+            margin-bottom: 10px;
+            width: 270px;
+            padding-right: 10px;
+        }
+        
+        .input-group label {
+            width: auto;
+            /* Mengubah lebar label menjadi otomatis */
+            margin-right: 0;
+            /* Menghilangkan margin kanan */
+            margin-bottom: 10px;
+            /* Memberikan jarak antara label dan input */
+        }
+        
+        .input-group input {
+            flex: 1;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 3px 3px 3px;
+            width: 135%;
+            /* Menjadikan input 100% lebar */
+            margin: auto;
+        }
+        
+        .input-group input[type="text"],
+        .input-group input[type="email"],
+        .input-group textarea {
+            padding: 15px;
+            /* Menyesuaikan padding untuk membuat semua input dan textarea memiliki ukuran yang sama */
+            height: 50px;
+            /* Menjadikan tinggi input teks dan email sama */
+            width: 100%;
+            /* Menjadikan lebar semua input 100% */
+        }
+        
+        .input-group input[type="text"] {
+            margin-top: 0;
+            /* Menghapus margin atas untuk input nama */
+        }
+        
+        .input-group:nth-child(2) input[type="email"] {
+            margin-top: 0;
+            /* Menghapus margin atas untuk input email */
+        }
+        
+        textarea {
+            padding: 20px;
+            /* Menyesuaikan padding untuk membuat textarea memiliki ukuran yang sama */
+            height: 150px;
+            /* Menjadikan tinggi textarea sama */
+            width: 135%;
+            /* Menjadikan lebar textarea 100% */
+            box-shadow: 2px 2px 2px;
+            border-radius: 7px;
+            margin: auto;
+            margin-inline: -80px;
+            margin-top: 15px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: rgba(69, 139, 72, 1);
+            color: white;
+            border: none;
+            width: 30%;
+            border-radius: 35px;
+            cursor: pointer;
+            align-items: center;
+            /* Ini tidak diperlukan untuk tombol */
+            margin: 0 auto;
+            /* Membuat tombol berada di tengah halaman secara horizontal */
+        }
+        
+        .button1 button:hover {
+            background-color: #45a049;
+        }
+        
+        .posisi-btn {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            /* Mengatur tombol berada di tengah halaman secara horizontal */
+        }
+        
+        footer {
+            background-color: hsl(231, 32%, 9%);
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .footer-container {
+            display: flex;
+            color: white;
+            text-align: start;
+            flex-wrap: wrap;
+        }
+        
+        .column {
+            margin: 20px auto;
+            font-size: 18px;
+        }
+        
+        .footer-container .column1 {
+            text-align: center;
+            margin: 0px 50px 0px auto;
+            text-align: start;
+        }
+        
+        .footer-container .column2 {
+            text-align: center;
+            margin: 0px 100px auto;
+            text-align: start;
+        }
+        
+        .column ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .column ul li {
+            padding: 7px;
+        }
+        
+        .column ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+        .column ul li a:hover {
+            color: #d3d3d3;
+        }
+        
+        .column ul li a:active {
+            color: #FEC600;
+        }
