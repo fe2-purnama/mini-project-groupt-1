@@ -258,6 +258,11 @@
             outline: none !important;
             box-shadow: none !important;
         }
+        
+        .faq-container {
+            margin-top: 300px;
+            padding-top: 50px;
+        }
         /*Kontak*/
         
         .kontak {
