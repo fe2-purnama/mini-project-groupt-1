@@ -152,8 +152,30 @@ $(document).ready(function() {
     });
 
 
+    const testimoni = $(".testimonial-testimoni");
+    let currentIndex = 0;
+    const intervalTime = 2000; // Waktu interval (ms)
+
+    function showNextTestimoni() {
+        // Menampilkan testimoni saat ini
+        testimoni.eq(currentIndex).show();
+
+        setTimeout(function() {
+            // Menghilangkan testimoni saat ini setelah jangka waktu tertentu
+            testimoni.eq(currentIndex).hide();
+
+            // Mengupdate indeks ke testimoni berikutnya
+            currentIndex = (currentIndex + 1) % testimoni.length;
+
+            // Memanggil fungsi rekursif untuk menampilkan testimoni berikutnya
+            showNextTestimoni();
+        }, intervalTime);
+    }
 
 
+
+    // Panggil fungsi untuk memulai loop
+    showNextTestimoni();
 
 });
 

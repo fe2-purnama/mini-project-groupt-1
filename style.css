@@ -177,8 +177,6 @@
             margin: 10px;
             /* Atur margin secara keseluruhan */
             padding: 10px;
-            /* Atur padding secara keseluruhan */
-            /* Menetapkan tinggi kartu */
         }
         
         .product-image {
@@ -291,22 +289,8 @@
         
         .container1 {
             background-color: #FEC600;
-        }
-        
-        .testimonial-testimoni {
-            display: flex;
-            flex-direction: column;
-            /* Mengatur tata letak menjadi kolom */
-            justify-content: center;
-            /* Menjadikan konten berada di tengah secara vertikal */
-            align-items: center;
-            /* Menjadikan konten berada di tengah secara horizontal */
-            gap: 20px;
-        }
-        
-        .testimonial-testimoni h1 {
-            font-family: 'Poppins';
-            margin-top: 20px;
+            position: relative;
+            padding-bottom: 80px;
         }
         
         .testimonial-card {
@@ -322,7 +306,7 @@
         
         .avatar {
             width: 100px;
-            height: 80px;
+            height: 100px;
             background-color: #ccc;
             border-radius: 50%;
             margin-bottom: 10px;
@@ -334,22 +318,31 @@
             /* Menjadikan teks menjadi rata kiri */
         }
         
-        .testimonial-testimoni {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            font-family: "Poppins";
+        .testimoni {
+            height: 200px;
+            /* Atur tinggi sesuai kebutuhan */
+            overflow: hidden;
+            /* Sembunyikan konten yang melebihi tinggi */
         }
         
         .testimonial-testimoni {
             display: flex;
-            flex-direction: column;
-            /* Mengatur tata letak menjadi kolom */
             justify-content: center;
-            /* Menjadikan konten berada di tengah secara vertikal */
-            align-items: center;
-            /* Menjadikan konten berada di tengah secara horizontal */
-            gap: 20px;
+            align-content: center;
+            flex-direction: column;
+            margin-left: 30%;
+            transition: opacity 0.5s ease;
+            display: none;
+        }
+        
+        .testimonial-testimoni .active {
+            display: block;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 600px;
+            position: relative;
+            /* Agar berada di depan */
         }
         
         .testimonial-card {
