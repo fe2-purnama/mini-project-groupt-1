@@ -430,6 +430,7 @@
             max-width: 600px;
             margin: 0 auto;
             padding: 70px;
+            margin-left: 27%;
         }
         
         form {
@@ -452,7 +453,7 @@
             flex-direction: column;
             /* Mengubah orientasi menjadi vertikal */
             margin-bottom: 10px;
-            width: 270px;
+            width: 250px;
             padding-right: 10px;
         }
         
@@ -468,9 +469,6 @@
         .input-group input {
             flex: 1;
             padding: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            box-shadow: 3px 3px 3px;
             width: 135%;
             /* Menjadikan input 100% lebar */
             margin: auto;
@@ -502,7 +500,7 @@
             /* Menyesuaikan padding untuk membuat textarea memiliki ukuran yang sama */
             height: 150px;
             /* Menjadikan tinggi textarea sama */
-            width: 135%;
+            width: 155%;
             /* Menjadikan lebar textarea 100% */
             box-shadow: 2px 2px 2px;
             border-radius: 7px;
@@ -539,7 +537,6 @@
         footer {
             background-color: hsl(231, 32%, 9%);
             text-align: center;
-            padding: 50px;
         }
         
         .footer-container {
