@@ -306,6 +306,7 @@
             position: relative;
             padding-bottom: 80px;
             overflow: hidden;
+            margin-right: 150px;
         }
         
         .testimonial-card {
@@ -430,7 +431,11 @@
             max-width: 600px;
             margin: 0 auto;
             padding: 70px;
-            margin-left: 27%;
+            margin-left: 300px;
+        }
+
+        .judul-kritik {
+            margin-left: 80px;
         }
         
         form {
@@ -446,6 +451,8 @@
             max-width: 680px;
             margin-inline: -80px;
             align-items: center;
+            margin-left: -100px;
+            margin-right: -65px;
         }
         
         .input-group {
@@ -507,9 +514,10 @@
             margin: auto;
             margin-inline: -80px;
             margin-top: 15px;
+            margin-left: -100px;
         }
         
-        button {
+        .btn-kritik {
             padding: 10px 20px;
             background-color: rgba(69, 139, 72, 1);
             color: white;
@@ -517,10 +525,8 @@
             width: 30%;
             border-radius: 35px;
             cursor: pointer;
-            align-items: center;
-            /* Ini tidak diperlukan untuk tombol */
-            margin: 0 auto;
-            /* Membuat tombol berada di tengah halaman secara horizontal */
+            margin-top: 10px;
+            margin-left: 32px ;
         }
         
         .button1 button:hover {
