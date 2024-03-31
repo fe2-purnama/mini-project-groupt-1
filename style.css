@@ -306,7 +306,6 @@
             position: relative;
             padding-bottom: 80px;
             overflow: hidden;
-            margin-right: 150px;
         }
         
         .testimonial-card {
@@ -420,27 +419,21 @@
             margin-bottom: 0;
             /* Menghapus margin bawah pada elemen p */
         }
+
+
         /*Kritik dan saran*/
         
         .kritiksaran {
             background-color: #FEC600;
-            margin: auto;
         }
         
         .containerkritik {
             max-width: 600px;
-            margin: 0 auto;
             padding: 70px;
-            margin-left: 400px;
-        }
-        
-        .judul-kritik {
-            margin-left: 80px;
         }
         
         form {
             margin-bottom: 20px;
-            margin: auto;
             padding-inline-start: 26px;
         }
         
@@ -448,37 +441,8 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
-            max-width: 680px;
-            margin-inline: -80px;
+            max-width: 1100px;
             align-items: center;
-            margin-left: -100px;
-            margin-right: -65px;
-        }
-        
-        .input-group {
-            display: flex;
-            flex-direction: column;
-            /* Mengubah orientasi menjadi vertikal */
-            margin-bottom: 10px;
-            width: 250px;
-            padding-right: 10px;
-        }
-        
-        .input-group label {
-            width: auto;
-            /* Mengubah lebar label menjadi otomatis */
-            margin-right: 0;
-            /* Menghilangkan margin kanan */
-            margin-bottom: 10px;
-            /* Memberikan jarak antara label dan input */
-        }
-        
-        .input-group input {
-            flex: 1;
-            padding: 15px;
-            width: 135%;
-            /* Menjadikan input 100% lebar */
-            margin: auto;
         }
         
         .input-group input[type="text"],
@@ -503,42 +467,29 @@
         }
         
         textarea {
-            padding: 20px;
-            /* Menyesuaikan padding untuk membuat textarea memiliki ukuran yang sama */
+            padding: 50px;
+            width: 100%;
             height: 150px;
-            /* Menjadikan tinggi textarea sama */
-            width: 155%;
-            /* Menjadikan lebar textarea 100% */
             box-shadow: 2px 2px 2px;
             border-radius: 7px;
-            margin: auto;
-            margin-inline: -80px;
-            margin-top: 15px;
-            margin-left: -100px;
         }
         
         .btn-kritik {
-            padding: 10px 20px;
             background-color: rgba(69, 139, 72, 1);
             color: white;
             border: none;
-            width: 30%;
+            width: 15%;
             border-radius: 35px;
             cursor: pointer;
-            margin-top: 10px;
-            margin-left: 32px;
         }
         
         .button1 button:hover {
             background-color: #45a049;
+            color: #fff;
         }
         
-        .posisi-btn {
-            margin-top: 15px;
-            display: flex;
-            justify-content: center;
-            /* Mengatur tombol berada di tengah halaman secara horizontal */
-        }
+
+        /* Footer */
         
         footer {
             background-color: hsl(231, 32%, 9%);
@@ -567,7 +518,7 @@
             text-align: center;
             margin: 0px 100px auto;
             text-align: start;
-        }
+    }
         
         .column ul {
             list-style: none;
