@@ -13,12 +13,15 @@
 
 </head>
 
+
 <body>
     <header class="fixed-top mb-2">
         <p>Promo Spesial Ramadhan : <b>Buy 1 Get 1</b> 🔥 | <span id="countdown">00 hari : 00 jam : 00 menit</span>🕛</p>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar fixed-top bg-body-tertiary mt-3 shadow-sm p-3 mb-0 bg-body-tertiary rounded ">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar fixed-top bg-body-tertiary mt-4 shadow-sm p-3 mb-0 bg-body-tertiary rounded ">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://i.ibb.co/nmZwLS0/image-Photoroom-png-Photoroom-1.png" alt="Bootstrap" width="65" height="40">
@@ -61,21 +64,26 @@
     </nav>
 
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid ">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-12">
+                    <!-- Menggunakan col-md-6 untuk layar yang lebih besar dan col-12 untuk layar yang lebih kecil -->
                     <h1 class="display-3 mt-5">Legendary Sambal <br> of Babakaran X <br>Taichan</h1>
                     <p class="lead text-danger">#TemanMakan</p>
                     <br><br>
                     <button type="button" class="btn-jumbo">Beli Sekarang</button>
                 </div>
-                <div class="col-md-6 ">
+                <div class="col-md-6 col-12">
+                    <!-- Menggunakan col-md-6 untuk layar yang lebih besar dan col-12 untuk layar yang lebih kecil -->
                     <img src="https://i.ibb.co/q7HjDkt/OP.png" class="img-fluid sambaljumbo" alt="">
                 </div>
             </div>
         </div>
     </div>
+
+
+
 
     <!-- Pilih Gengs -->
     <section id="gengs"></section>
@@ -124,7 +132,7 @@
 
 
     <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide carousel-dark mt-4">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-dark mt-4" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -159,22 +167,21 @@
     <article class="produk mt-5 py-4">
         <div class="container mt-lg-5">
             <div class="d-flex justify-content-between mt-5">
-                <h3 class="fw-bolder ">Aneka Varian <span class="red-text">HotGengs!</span></h3>
+                <h3 class="fw-bolder">Aneka Varian <span class="red-text">HotGengs!</span></h3>
                 <!-- Jarak di antara h5 dan card -->
                 <div></div>
             </div>
-            <div class=" row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 ">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
                 <div class="col-md-4">
                     <div class="card product-card shadow-sm d-flex justify-content-center align-items-center" id="cumikicik">
-                        <div class=" product-image " style="width: 12rem; ">
-                            <img src="https://i.ibb.co/4FqQy1C/Geng-asinan.png" alt="Produk " class="closed img-fluid ">
-
+                        <div class="product-image" style="width: 12rem;">
+                            <img src="https://i.ibb.co/4FqQy1C/Geng-asinan.png" alt="Produk" class="closed img-fluid">
                         </div>
-                        <div class="product-info ">
+                        <div class="product-info">
                             <h5>Sambel Cumi Kicik</h5>
                             <p>Rp. 23.000 - 32.000</p>
                             <a href="detailProduk/index.html">
-                                <button class="btn btn-danger btn-beli ">Beli</button>
+                                <button class="btn btn-danger btn-beli">Beli</button>
                             </a>
                         </div>
                     </div>
@@ -394,13 +401,12 @@
     <!-- Testimoni -->
     <section id="testi">
         <div class="container-fluid container1 mt-5 mb-5 py-5">
-            <div class="container container2">
-                <div class="d-flex justify-content-between">
-                    <h3 class="fw-bolder mt-4 ms-5 text-light">Testimoni <span class="red-text">HotGengs!</span></h3>
-                </div>
-
+            <div class="d-flex justify-content-start">
+                <h3 class="fw-bolder mt-4 text-light">Testimoni <span class="red-text">HotGengs!</span></h3>
+            </div>
+            <div class="container2 ">
                 <div class="testimonial-testimoni active">
-                    <div class="testimonial-card mb-0 py-1">
+                    <div class="testimonial-card mb-0 py-1 ">
                         <div>
                             <IMG class="avatar" src="data:image/jpeg;base64,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"
                             />
@@ -473,26 +479,23 @@
 
     <!-- Tentang Kami -->
     <section id="aboutus" class="mt-5 py-lg-2"></section>
-    <div class="container mt-5 py-5 ">
-        <h3 class="fw-bolder ">Tentang <span class="text-danger ">Kami</span> </h3>
-        <div class="row ">
-            <div class="col-6 ">
-                <img src="assets/about.png " alt="HotGengs " width="90% " height="auto " style="transform: translateX(-40px); ">
+    <div class="container mt-5 py-5">
+        <h3 class="fw-bolder">Tentang <span class="text-danger">Kami</span></h3>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="assets/about.png" alt="HotGengs" class="img-fluid" style="transform: translateX(-40px);">
             </div>
-            <div class="col-6 d-flex mt-5 ">
-                <div class="text py-2 ">
-                    <h1 class="fw-bolder ">Apa itu <span class="red-text ">HotGengs?</span></h1>
-                    <p>P.S HotGengs Sambal adalah sebuah resep sambal restoran asal Bandung, yaitu Babakaran yang berdiri sejak 2015 HotGengs Sambal mulai digemari, karena cita rasanya yang pedas.
-                    </p>
-                    <p>Pada tahun 2017, karena semakin banyaknya pecinta sambal Sate Babakaran, terciptalah istilah "HotGengs " teruntuk para penikmat Sate Babakaran. Akhirnya pada tahun 2022, Babakaran Group mengembangkan formulasi sambalnya menjadi 15
-                        varian dan menjadikan merk dagang baru yaitu "HotGengs Sambal "
-                    </p>
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="text py-2">
+                    <h1 class="fw-bolder">Apa itu <span class="red-text">HotGengs?</span></h1>
+                    <p>P.S HotGengs Sambal adalah sebuah resep sambal restoran asal Bandung, yaitu Babakaran yang berdiri sejak 2015 HotGengs Sambal mulai digemari, karena cita rasanya yang pedas.</p>
+                    <p>Pada tahun 2017, karena semakin banyaknya pecinta sambal Sate Babakaran, terciptalah istilah "HotGengs" teruntuk para penikmat Sate Babakaran. Akhirnya pada tahun 2022, Babakaran Group mengembangkan formulasi sambalnya menjadi 15 varian
+                        dan menjadikan merk dagang baru yaitu "HotGengs Sambal"</p>
                     <p>Terimakasih & Selamat mencoba HotGengs Sambal</p>
                     <p>Salam Pecinta Pedas</p>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- FAQ -->
@@ -549,106 +552,97 @@
             </div>
     </article>
     <!-- kritik dan saran -->
-    <section id="kritik">
-        <div class="kritiksaran mt-4 py-1 ">
-            <div class="containerkritik">
-                <div class="d-flex">
-                    <h3 class="fw-bolder text-center pb-3 judul-kritik">Beri Kami <span class="text-danger ">Kritik</span> dan <span class="text-danger ">Saran</span></h3>
+    <section id="kritik"></section>
+    <div class="container-fluid fluid-saran justify-content-center mt-5 py-5">
+        <div class="kritiksaran mt-4 py-1">
+            <div class="container containerkritik">
+                <div class="d-flex justify-content-center">
+                    <h3 class="fw-bolder">Beri Kami <span class="text-danger">Kritik</span> dan <span class="text-danger">Saran</span></h3>
                 </div>
 
                 <form>
-                    <div class="form-row">
-                        <div class="input-group ">
-                            <label for="nama "><b>Nama:</b></label>
-                            <input type="text " id="nama " name="nama " placeholder="Masukkan nama anda " class="shadow rounded-2 border-0" required />
+                    <div class="form-row py-2">
+                        <div class="form-group col-md-6">
+                            <label for="nama"><b>Nama:</b></label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama anda" class="form-control form-control-sm shadow rounded-2 border-0" required />
                         </div>
-                        <div class="input-group ">
-                            <label for="email "><b>Email:</b></label>
-                            <input type="email " id="email " name="email " placeholder="Masukkan email anda " class="shadow rounded-2 border-0" required />
+                        <div class="form-group col-md-6">
+                            <label for="email"><b>Email:</b></label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email anda" class="form-control form-control-sm shadow rounded-2 border-0" required />
                         </div>
                     </div>
 
-                    <label for="kritik_saran "> <b style="margin-left: -100px; padding-top: 90px; ">Kritik dan Saran:</b></label>
-                    <textarea id="kritik_saran " name="kritik_saran " rows="5 " placeholder="Masukkan kritik dan saran anda " class="textarea shadow rounded-2 border-0" required></textarea>
-                    <div class="button1 ">
-                        <div class="posisi-btn ">
-                            <button type="submit" class="btn-kritik"><b> Submit</b></button>
+                    <label for="kritik_saran"><b>Kritik dan Saran:</b></label>
+                    <textarea id="kritik_saran" name="kritik_saran" rows="5" placeholder="Masukkan kritik dan saran anda" class="textarea shadow rounded-2 border-0" required></textarea>
+                    <div class="button1 mt-3">
+                        <div class="posisi-btn">
+                            <button class="rounded py-1" type="submit"><b>Submit</b></button>
                         </div>
-                        <section id="contact "></section>
+                        <section id="contact"></section>
                     </div>
                 </form>
             </div>
         </div>
-    </section>
+    </div>
+
+
 
 
     <!-- Hubungi Kami -->
     <section id="contact"></section>
-    <article class="kontak py-5 mt-0 ">
-        <div class="container-fluid mx-auto judul pb-4 ">
-            <h3 class="text-white text-center fw-semibold p-3 ">Hubungi Kami</h3>
-            <div class="container text-center mt-3 ">
-                <div class="row row-divider ">
-                    <div class="col col-divider ">
-                        <img src="./assets/icons/sosmed.svg " alt="sosmed ">
-                        <h5 class="text-white ">Media Sosial</h5>
-                        <br>
-                        <div class="row d-flex text-start ms-4 ">
-                            <ul class="kontak_list ms-5 ">
-                                <li class="kontak_list_isi mb-2 ms-1 ">
-                                    <img src="./assets/icons/instagram.svg " alt="instagram " class="me-1 ">
-                                    <a href="https://www.instagram.com/hotgengs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target=" _blank ">Instagram</a>
-                                </li>
-                                <li class="kontak_list_isi mb-2 ">
-                                    <img src="./assets/icons/Facebook.svg " alt="facebook " class="me-1 ">
-                                    <a href="https://www.facebook.com/ " target="_blank ">Facebook</a>
-                                </li>
-                                <li class="kontak_list_isi mb-2 ms-1 ">
-                                    <img src="./assets/icons/twitter.svg " alt="twitter " class="me-2 ">
-                                    <a href="https://twitter.com/ " target="_blank ">Twitter</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-divider ">
-                        <img src="./assets/icons/ecommerce.svg " alt="ecommerce ">
-                        <h5 class="text-white ">E-Commerce</h5>
-                        <br>
-                        <div class="row d-flex text-start ms-5 ">
-                            <ul class="kontak_list ms-5 ">
-                                <li class="kontak_list_isi mb-1 ms-1 ">
-                                    <img src="./assets/icons/shopee.svg " alt="shopee " class="me-2 ">
-                                    <a href="https://shopee.co.id/hotgengs " target="_blank ">Shopee</a>
-                                </li>
-                                <li class="kontak_list_isi mb-1 ">
-                                    <img src="./assets/icons/tokped.svg " alt="tokped " class="me-1 ">
-                                    <a href="https://tokopedia.link/bj4jabWxjIb " target="_blank ">Tokopedia</a>
-                                </li>
-                                <li class="kontak_list_isi mb-1 ms-1 ">
-                                    <img src="./assets/icons/tiktok.svg " alt="tiktok " class="ms-1 me-3 ">
-                                    <a href="https://www.tiktok.com/@hotgengs?is_from_webapp=1&sender_device=pc " target="_blank ">Tiktok Shop</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col ">
-                        <img src="./assets/icons/contact.svg " alt="telepon ">
-                        <h5 class="text-white ">Kontak</h5>
-                        <br>
-                        <div class="row d-flex text-start ms-5 ">
-                            <ul class="kontak_list ms-3 ">
-                                <li class="kontak_list_isi mb-2 ms-1 ">
-                                    <img src="./assets/icons/wa.svg " alt="wa " class="me-2 ">
-                                    <a href="https://api.whatsapp.com/send?phone=6281313132176&text=Hai%20min%F0%9F%91%8B%F0%9F%8F%BB%20Sambal%20Hotgengsnya%20ready%3F&utm_medium=social&utm_source=heylink.me&utm_medium=social&utm_source=heylink.me
-                " target="_blank ">+62-1234567890</a>
-                                </li>
-                                <li class="kontak_list_isi mb-2 ">
-                                    <img src="./assets/icons/email.svg " alt="email " class="me-1 ">
-                                    <a href="# ">hotgengs@email.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <article class="kontak py-5 mt-0">
+        <div class="container">
+            <h3 class="text-center fw-semibold pb-4 text-light">Hubungi Kami</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./assets/icons/sosmed.svg" alt="sosmed" class="mx-auto d-block">
+                    <h5 class="text-center text-light">Media Sosial</h5>
+                    <ul class="kontak_list text-center">
+                        <li class="kontak_list_isi mb-2">
+                            <img src="./assets/icons/instagram.svg" alt="instagram" class="me-1">
+                            <a href="https://www.instagram.com/hotgengs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+                        </li>
+                        <li class="kontak_list_isi mb-2">
+                            <img src="./assets/icons/Facebook.svg" alt="facebook" class="me-1">
+                            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                        </li>
+                        <li class="kontak_list_isi mb-2">
+                            <img src="./assets/icons/twitter.svg" alt="twitter" class="me-1">
+                            <a href="https://twitter.com/" target="_blank">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/icons/ecommerce.svg" alt="ecommerce" class="mx-auto d-block">
+                    <h5 class="text-center text-light">E-Commerce</h5>
+                    <ul class="kontak_list text-center">
+                        <li class="kontak_list_isi mb-2">
+                            <img src="./assets/icons/shopee.svg" alt="shopee" class="me-1">
+                            <a href="https://shopee.co.id/hotgengs" target="_blank">Shopee</a>
+                        </li>
+                        <li class="kontak_list_isi mb-2">
+                            <img src="./assets/icons/tokped.svg" alt="tokped" class="me-1">
+                            <a href="https://tokopedia.link/bj4jabWxjIb" target="_blank">Tokopedia</a>
+                        </li>
+                        <li class="kontak_list_isi mb-2">
+                            <img src="./assets/icons/tiktok.svg" alt="tiktok" class="me-1">
+                            <a href="https://www.tiktok.com/@hotgengs?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok Shop</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/icons/contact.svg" alt="telepon" class="mx-auto d-block">
+                    <h5 class="text-center text-light">Kontak</h5>
+                    <ul class="kontak_list text-center">
+                        <li class="kontak_list_isi mb-2">
+                            <img src="./assets/icons/wa.svg" alt="wa" class="me-1">
+                            <a href="https://api.whatsapp.com/send?phone=6281313132176&text=Hai%20min%F0%9F%91%8B%F0%9F%8F%BB%20Sambal%20Hotgengsnya%20ready%3F&utm_medium=social&utm_source=heylink.me&utm_medium=social&utm_source=heylink.me" target="_blank">+62-1234567890</a>
+                        </li>
+                        <li class="kontak_list_isi mb-2">
+                            <img src="./assets/icons/email.svg" alt="email" class="me-1">
+                            <a href="# ">hotgengs@email.com</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

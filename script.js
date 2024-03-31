@@ -1,20 +1,5 @@
 $(document).ready(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-            $('.navbar').addClass('navbar-scrolled');
-        } else {
-            $('.navbar').removeClass('navbar-scrolled');
-        }
-    });
-    $(window).scroll(function() {
-        // Jika posisi scroll lebih besar dari 50px, tambahkan kelas 'navbar-scrolled'
-        if ($(this).scrollTop() > 50) {
-            $('.navbar').addClass('navbar-scrolled');
-        } else {
-            // Jika posisi scroll kurang dari atau sama dengan 50px, hapus kelas 'navbar-scrolled'
-            $('.navbar').removeClass('navbar-scrolled');
-        }
-    });
+
     // Tanggal target (10 April)
     const targetDate = new Date('2024-04-10T23:59:59');
 
