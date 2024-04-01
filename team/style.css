@@ -259,3 +259,17 @@
         height: 300px;
         object-fit: cover;
     }
+
+    .jarak {
+        margin-top: 0%;
+    }
+
+    .jaraktab {
+        margin-top: 0%;
+    }
+
+    @media (max-width: 577px) {
+        .jarak {
+            margin-top: 17%;
+        }
+    }
