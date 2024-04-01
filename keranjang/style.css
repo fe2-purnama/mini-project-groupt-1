@@ -1,0 +1,285 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*header*/
+
+header {
+    display: flex;
+    /* Gunakan flexbox untuk mengatur tata letak header */
+    justify-content: center;
+    /* Pusatkan konten header secara horizontal */
+    align-items: center;
+    /* Pusatkan konten header secara vertikal */
+    height: 40px;
+    /* Tentukan tinggi header */
+    background-color: green;
+    /* Ubah warna latar belakang header */
+    color: white;
+    /* Ubah warna teks header */
+    font-size: 16px;
+    padding: 10px;
+    /* Atur padding sesuai kebutuhan */
+    width: 100%;
+    /* Atur lebar header menjadi 100% dari lebar layar */
+    box-sizing: border-box;
+    /* Atur ukuran font */
+}
+
+header p {
+    color: white;
+    margin-bottom: 0;
+}
+
+.nav-item .active {
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    margin-top: 50px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.navdrop {
+    border: none;
+}
+
+.dropdown-menu {
+    border: none;
+    background-color: white;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #EB3E48 !important;
+}
+
+.title {
+    margin-bottom: 5vh;
+}
+
+.card {
+    margin: auto;
+    max-width: 950px;
+    width: 90%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    border: transparent;
+}
+
+@media(max-width:767px) {
+    .card {
+        margin: 3vh auto;
+    }
+}
+
+.cart {
+    background-color: #fff;
+    padding: 4vh 5vh;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+@media(max-width:767px) {
+    .cart {
+        padding: 4vh;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 1rem;
+    }
+}
+
+.summary {
+    background-color: #ddd;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 4vh;
+    color: rgb(65, 65, 65);
+}
+
+
+/* Atur lebar maksimum opsi */
+
+
+/* CSS untuk elemen select */
+
+@media(max-width:767px) {
+    .summary {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 1rem;
+    }
+}
+
+.summary .col-2 {
+    padding: 0;
+}
+
+.summary .col-10 {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.title b {
+    font-size: 1.5rem;
+}
+
+.main {
+    margin: 0;
+    padding: 2vh 0;
+    width: 100%;
+}
+
+.col-2,
+.col {
+    padding: 0 1vh;
+}
+
+a {
+    padding: 0 1vh;
+}
+
+.close {
+    margin-left: auto;
+    font-size: 0.7rem;
+}
+
+.main-img {
+    width: 5.5rem;
+}
+
+.back-to-shop {
+    margin-top: 4.5rem;
+}
+
+h5 {
+    margin-top: 4vh;
+}
+
+hr {
+    margin-top: 1.25rem;
+}
+
+form {
+    padding: 2vh 0;
+}
+
+select {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1.5vh 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    max-width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.btn {
+    background-color: #EB3E48;
+    color: white;
+    width: 100%;
+    font-size: 0.7rem;
+    margin-top: 4vh;
+    padding: 1vh;
+    border: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    -webkit-box-shadow: none;
+    -webkit-user-select: none;
+    transition: none;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #a80d12;
+}
+
+.btn-pm {
+    border: none;
+}
+
+.btn-pm:hover {
+    border: 1px solid #000000;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#code {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+}
+
+@media (max-width: 767px) {
+    header {
+        margin: 0px;
+        font-size: 10px;
+        padding: 0px;
+        width: 100%;
+        /* Pastikan padding tidak menambah lebar total */
+    }
+    header p {
+        font-size: 8px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .judul {
+        font-size: 16px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap
+    }
+    .sub-judul {
+        font-size: 16px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .main-img img {
+        width: 4.5rem;
+    }
+    .pengiriman option {
+        max-width: 100px;
+        /* Menggunakan lebar maksimum */
+    }
+}

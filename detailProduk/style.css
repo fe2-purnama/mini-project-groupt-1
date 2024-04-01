@@ -67,6 +67,16 @@
         border: none;
     }
     
+    .dropdown-menu {
+        border: none;
+        background-color: white;
+    }
+    
+    .dropdown-item.active,
+    .dropdown-item:active {
+        background-color: #EB3E48 !important;
+    }
+    
     .active {
         color: #EB3E48;
     }
@@ -145,6 +155,18 @@
     
     .btn-danger:focus {
         box-shadow: none
+    }
+    
+    .keranjang {
+        border: 1px solid #EB3E48;
+        background-color: rgba(255, 255, 255, 0);
+        color: #EB3E48;
+    }
+    
+    .keranjang:hover {
+        border: 1px solid #EB3E48;
+        background-color: #EB3E48;
+        color: #ffffff;
     }
     
     .cart i {

@@ -87,6 +87,16 @@
         border: none;
     }
     
+    .dropdown-menu {
+        border: none;
+        background-color: white;
+    }
+    
+    .dropdown-item.active,
+    .dropdown-item:active {
+        background-color: #EB3E48 !important;
+    }
+    
     .active {
         color: #EB3E48;
     }
