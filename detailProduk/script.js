@@ -64,6 +64,9 @@ $(document).ready(function() {
     // Jalankan updateCountdown saat halaman dimuat
     updateCountdown();
 
+    $('.keranjang').click(function() {
+        $('.toast').toast('show'); // Menampilkan toast saat tombol "Masukkan Keranjang" ditekan
+    });
 });
 
 document.addEventListener("DOMContentLoaded", function() {

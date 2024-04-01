@@ -66,6 +66,16 @@
             border: none;
         }
         
+        .dropdown-menu {
+            border: none;
+            background-color: white;
+        }
+        
+        .dropdown-item.active,
+        .dropdown-item:active {
+            background-color: #EB3E48 !important;
+        }
+        
         .jumbotron {
             background-color: #FEC600;
             padding-top: 0%;
@@ -640,7 +650,7 @@
             }
             .sambaljumbo {
                 width: 500px;
-                height: 300px;
+                height: 400px;
                 transition: transform 0.5s ease;
                 padding-bottom: 0;
             }
