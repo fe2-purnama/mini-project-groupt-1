@@ -162,6 +162,12 @@ $(document).ready(function() {
     // Panggil fungsi untuk memulai loop
     showNextTestimoni();
 
+    $(document).ready(function(){
+        $('.carousel').carousel({
+            interval: 2000 // Mengatur interval ganti slide menjadi 2 detik
+        });
+    });
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {

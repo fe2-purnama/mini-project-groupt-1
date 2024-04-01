@@ -286,8 +286,6 @@
         
         .col-divider {
             border-right: 3px solid #fff;
-            padding-right: 5px;
-            margin-right: 5px;
             height: 50%;
         }
         
@@ -299,12 +297,65 @@
         .kontak_list {
             list-style-type: none;
             padding: 0;
+            /* margin-left: 25%; */
         }
         
         .kontak_list_isi a {
             text-decoration: none;
             color: #E5E5E5;
         }
+
+        .ecommerce {
+            margin-left: 10%;
+        }
+
+        .img-hub {
+            width: auto;
+        }
+
+        @media (max-width: 769px) {
+            .col-divider {
+                display: flex;
+                flex-direction: column;
+                border-right: none;
+            }
+
+            .ecommerce {
+            margin-left: 0%;
+            }
+
+            .kontak_list_isi {
+                font-size: small;
+            }
+        }
+        
+        @media (max-width: 577px) {
+            .col-divider {
+                margin-bottom: none;
+            }
+            .kontak_list {
+                text-align: center;
+            }
+            .kontak_list_isi {
+                display: inline-block;
+                margin-right: 0%;
+                margin-left: 0%;
+            }
+            .img-hub {
+                width: 0%;
+            }
+            .kontak_list {
+                display: flex;
+                flex-direction: column;
+            }
+            .kontak_list li {
+                text-align: start;
+                justify-content: start;
+                margin-left: 10%;
+            }
+        }
+        
+
         /*testimoni*/
         
         .container1 {
@@ -463,6 +514,10 @@
             max-width: 1100px;
             align-items: center;
         }
+
+        .kiri {
+            margin-right: 1%;
+        }
         
         .input-group input[type="text"],
         .input-group input[type="email"],
@@ -486,8 +541,8 @@
         }
         
         textarea {
-            padding: 50px;
-            width: 100%;
+            padding: 10px;
+            width: 103%;
             height: 150px;
             box-shadow: 2px 2px 2px;
             border-radius: 7px;
