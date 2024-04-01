@@ -37,6 +37,32 @@ $(document).ready(function() {
     // Jalankan updateCountdown saat halaman dimuat
     updateCountdown();
 
+    //Carousel
+    $('#carouselExampleCaptions').carousel({
+        interval: 2000 // Ganti angka 3000 dengan interval waktu dalam milidetik antar slide (misalnya, 3000 untuk 3 detik)
+    });
+
+    function changeCarouselImages() {
+        var width = $(window).width();
+        var newMobileImageUrls = ['https://down-tx-id.img.susercontent.com/id-11134210-7r98v-lt2l3bigclkka4.webp', 'https://down-tx-id.img.susercontent.com/id-11134210-7r98v-lt2l3bhmdto915.webp', 'https://down-tx-id.img.susercontent.com/id-11134210-7r98u-lt2gzswa3tn189.webp'];
+        var newDesktopImageUrls = ['./img/Group 1030.svg', './img/Group 1038.svg', './img/Group 1041.svg'];
+
+        var newImageUrls = (width <= 768) ? newMobileImageUrls : newDesktopImageUrls;
+
+        $('.carousel-item img').each(function(index) {
+            $(this).attr('src', newImageUrls[index]);
+        });
+    }
+
+    // Panggil fungsi untuk pertama kali
+    changeCarouselImages();
+
+    // Panggil fungsi saat window di-resize
+    $(window).resize(function() {
+        changeCarouselImages();
+    });
+
+
     // Membuat katalog produk
     var imageUrls = {
         bawangpete: {
