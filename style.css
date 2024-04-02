@@ -328,7 +328,7 @@
         }
 
         .kontak-hub {
-            margin-left: 0%;
+            margin-left: 20%;
         }
 
         @media (max-width: 769px) {
@@ -344,6 +344,10 @@
 
             .kontak_list_isi {
                 font-size: small;
+            }
+
+            .kontak-hub {
+                margin-left: 15%;
             }
         }
         
