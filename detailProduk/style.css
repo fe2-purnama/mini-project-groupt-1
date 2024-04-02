@@ -161,6 +161,15 @@
         background-color: #EB3E48;
     }
     
+    @media (max-width: 992px) {
+        .nav-login {
+            background-color: #EB3E48;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+    
     .keranjang {
         border: 1px solid #EB3E48;
         background-color: rgba(255, 255, 255, 0);

@@ -96,6 +96,15 @@
         background-color: #EB3E48;
     }
     
+    @media (max-width: 992px) {
+        .nav-login {
+            background-color: #EB3E48;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+    
     .dropdown-item.active,
     .dropdown-item:active {
         background-color: #EB3E48 !important;
