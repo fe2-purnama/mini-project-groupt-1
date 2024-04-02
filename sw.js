@@ -1,5 +1,5 @@
 const cacheName = "Hotgengs";
-const preCache = ["/", "/style.css", "/script.js"];
+const preCache = ["/", "/style.css", "/script.js", "/detailProduk/index.html", "/detailProduk/style.css", "/detailProduk/script.js", "/keranjang/index.html", "/keranjang/style.css", "/keranjang/script.js", "/login/index.html", "/login/style.css", "/lupapass/index.html", "/lupapass/script.js", "/lupapass/style.css", "/register/index.html", "/register/style.css", "/team/index.html", "/team/style.css", "/team/script.js"];
 
 self.addEventListener("install", (e) => {
     console.log("Service worker installed");
