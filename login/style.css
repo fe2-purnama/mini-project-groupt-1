@@ -1,0 +1,38 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+    background-color: #EB3E48;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e20a15;
+    color: #ffffff;
+}
+
+.btn-primary:focus {
+    background-color: #e20a15 !important;
+    color: #ffffff;
+}
+
+.form-check-input {
+    background-color: #ffffff;
+    border: 1px solid #EB3E48;
+}
+
+.form-check-input:hover {
+    background-color: #EB3E48;
+    border: none;
+}
+
+.form-check-input:focus {
+    background-color: #d0585e !important;
+}
+
+.form-check-input:checked {
+    background-color: #EB3E48;
+    border: none;
+}

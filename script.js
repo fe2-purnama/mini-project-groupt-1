@@ -143,23 +143,44 @@ $(document).ready(function() {
     });
 
     // Menentukan jumlah produk per halaman
-    var productsPerPage = 8;
-    var totalProducts = $('.produk .col-md-4').length;
-    var totalPages = Math.ceil(totalProducts / productsPerPage);
+    function updatePagination() {
+        var windowWidth = $(window).width(); // Lebar halaman saat ini
+        var productsPerPage = windowWidth < 576 ? 4 : 8; // Jumlah kartu per halaman
+        var totalProducts = $('.produk .col-md-4').length;
+        var totalPages = Math.ceil(totalProducts / productsPerPage);
 
-    $('.produk .col-md-4').hide();
-    $('.produk .col-md-4:lt(' + productsPerPage + ')').show();
+        // Tampilkan halaman pertama dan buat halaman pagination
+        $('.pagination').empty();
+        for (var i = 1; i <= totalPages; i++) {
+            var activeClass = i === 1 ? 'active' : '';
+            $('.pagination').append('<li class="page-item ' + activeClass + '"><a class="page-link" href="#" data-page="' + i + '">' + i + '</a></li>');
+        }
 
-    $('.pagination .page-link').on('click', function(e) {
-        e.preventDefault();
-        var pageNumber = parseInt($(this).data('page'));
+        // Atur kembali pagination saat halaman dimuat pertama kali
+        $('.pagination .page-link').on('click', function(e) {
+            e.preventDefault();
+            var pageNumber = parseInt($(this).data('page'));
 
-        $('.pagination .active').removeClass('active');
-        $(this).closest('.page-item').addClass('active');
+            $('.pagination .active').removeClass('active');
+            $(this).closest('.page-item').addClass('active');
 
-        var startIndex = (pageNumber - 1) * productsPerPage;
-        var endIndex = startIndex + productsPerPage;
-        $('.produk .col-md-4').hide().slice(startIndex, endIndex).show();
+            var startIndex = (pageNumber - 1) * productsPerPage;
+            var endIndex = startIndex + productsPerPage;
+            $('.produk .col-md-4').hide().slice(startIndex, endIndex).show();
+        });
+
+        // Tampilkan halaman pertama dan atur event handler
+        $('.pagination .page-link').first().click();
+    }
+
+    // Panggil fungsi saat halaman dimuat pertama kali
+    $(document).ready(function() {
+        updatePagination();
+    });
+
+    // Panggil fungsi saat ukuran halaman berubah
+    $(window).resize(function() {
+        updatePagination();
     });
 
 
@@ -188,7 +209,7 @@ $(document).ready(function() {
     // Panggil fungsi untuk memulai loop
     showNextTestimoni();
 
-    $(document).ready(function(){
+    $(document).ready(function() {
         $('.carousel').carousel({
             interval: 2000 // Mengatur interval ganti slide menjadi 2 detik
         });

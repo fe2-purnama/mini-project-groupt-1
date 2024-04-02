@@ -1,0 +1,20 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-dark {
+    background-color: #EB3E48;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-dark:focus {
+    background-color: #EB3E48 !important;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #e20a15;
+    color: #ffffff;
+}
