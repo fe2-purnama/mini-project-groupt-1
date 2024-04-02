@@ -3,7 +3,7 @@
     "start_url": ".",
     "display": "standalone",
     "theme_color": "#EB3E48",
-    "background_color": "white",
+    "background_color": "black",
     "icons": [{
             "src": "ico/hotgengs-192x192.png",
             "type": "image/png",
