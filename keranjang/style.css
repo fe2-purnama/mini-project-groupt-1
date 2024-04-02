@@ -54,6 +54,10 @@ header p {
     font-weight: bold;
 }
 
+.nav-login {
+    background-color: #EB3E48;
+}
+
 .navdrop {
     border: none;
 }

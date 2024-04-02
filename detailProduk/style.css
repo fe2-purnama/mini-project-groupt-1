@@ -157,6 +157,10 @@
         box-shadow: none
     }
     
+    .nav-login {
+        background-color: #EB3E48;
+    }
+    
     .keranjang {
         border: 1px solid #EB3E48;
         background-color: rgba(255, 255, 255, 0);

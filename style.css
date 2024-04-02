@@ -53,6 +53,19 @@
             margin-top: 50px;
         }
         
+        .nav-login {
+            background-color: #EB3E48;
+        }
+        
+        @media (max-width: 992px) {
+            .nav-login {
+                background-color: #EB3E48;
+                width: 30%;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+        
         .nav-link {
             color: black;
         }
@@ -314,38 +327,35 @@
             text-decoration: none;
             color: #E5E5E5;
         }
-
+        
         .ecommerce {
             margin-left: 10%;
         }
-
+        
         .img-hub {
             width: auto;
         }
-
+        
         .judul-hub {
             text-align: center;
         }
-
+        
         .kontak-hub {
             margin-left: 20%;
         }
-
+        
         @media (max-width: 769px) {
             .col-divider {
                 display: flex;
                 flex-direction: column;
                 border-right: none;
             }
-
             .ecommerce {
-            margin-left: 0%;
+                margin-left: 0%;
             }
-
             .kontak_list_isi {
                 font-size: small;
             }
-
             .kontak-hub {
                 margin-left: 15%;
             }
@@ -386,8 +396,6 @@
                 margin-left: 6%;
             }
         }
-        
-
         /*testimoni*/
         
         .container1 {
@@ -546,7 +554,7 @@
             max-width: 1100px;
             align-items: center;
         }
-
+        
         .kiri {
             margin-right: 1%;
         }
@@ -597,18 +605,22 @@
             background-color: #45a049;
             color: #fff;
         }
-
+        
         @media (max-width: 767px) {
             .kritik-kecil {
                 margin-right: 2%;
             }
         }
-
         /* Footer */
         
         footer {
             background-color: hsl(231, 32%, 9%);
             text-align: center;
+        }
+        
+        footer li,
+        p {
+            font-size: 14px;
         }
         
         .footer-container {
@@ -679,7 +691,7 @@
             }
             .sambaljumbo {
                 width: 500px;
-                height: 400px;
+                height: 500px;
                 transition: transform 0.5s ease;
                 padding-bottom: 0;
             }
