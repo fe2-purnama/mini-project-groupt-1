@@ -1,6 +1,10 @@
         /*header*/
         /* Aturan CSS untuk header */
         
+        html {
+            scroll-behavior: smooth;
+        }
+        
         header {
             display: flex;
             /* Gunakan flexbox untuk mengatur tata letak header */
